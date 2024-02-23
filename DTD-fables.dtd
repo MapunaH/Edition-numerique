@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DECLARATION EXTERNE DE LA DTD pour contraindre la validation du document XML à son schéma
+     ENTITES : Définit les entités qui sont utilisées dans le document XML, par ordre alphabétique puis par ponctuation.
+     x-y = soit à gauche du tiret l'orthographe de l'ancien français et à droite de celui-ci sa version modernisée. -->
+
+<!-- Les lettres -->
+<!ENTITY A-a "<choice><orig>A</orig><reg>a</reg></choice>">
+<!ENTITY a-â "<choice><orig>a</orig><reg>â</reg></choice>">
+<!ENTITY af-â "<choice><orig>af</orig><reg>â</reg></choice>">
+<!ENTITY aft-a "<choice><orig>afT</orig><reg>a</reg></choice>">
+<!ENTITY C-c "<choice><orig>C</orig><reg>c</reg></choice>" >
+<!ENTITY D-d "<choice><orig>D</orig><reg>d</reg></choice>">
+<!ENTITY t-d "<choice><orig>t</orig><reg>d</reg></choice>">
+<!ENTITY e "<choice><orig></orig><reg>e</reg></choice>">
+<!ENTITY e-é "<choice><orig>e</orig><reg>é</reg></choice>">
+<!ENTITY e-è "<choice><orig>e</orig><reg>è</reg></choice>">
+<!ENTITY ef-é "<choice><orig>eſ</orig><reg>é</reg></choice>">
+<!ENTITY ef-ê "<choice><orig>eſ</orig><reg>ê</reg></choice>">
+<!ENTITY ez-és "<choice><orig>ez</orig><reg>és</reg></choice>">
+<!ENTITY F-f "<choice><orig>F</orig><reg>f</reg></choice>">
+<!ENTITY f "<choice><orig>ſ</orig><reg></reg></choice>">
+<!ENTITY fç-s "<choice><orig>ſç</orig><reg>s</reg></choice>">
+<!ENTITY G-g "<choice><orig>G</orig><reg>g</reg></choice>">
+<!ENTITY n-gn "<choice><orig>n</orig><reg>gn</reg></choice>">
+<!ENTITY if-î "<choice><orig>if</orig><reg>î</reg></choice>">
+<!ENTITY y-i "<choice><orig>y</orig><reg>i</reg></choice>">
+<!ENTITY J-j "<choice><orig>J</orig><reg>j</reg></choice>">
+<!ENTITY L-l "<choice><orig>L</orig><reg>l</reg></choice>">
+<!ENTITY M-m "<choice><orig>M</orig><reg>m</reg></choice>">
+<!ENTITY N-n "<choice><orig>N</orig><reg>n</reg></choice>">
+<!ENTITY O-o "<choice><orig>O</orig><reg>o</reg></choice>">
+<!ENTITY O-ho "<choice><orig>O</orig><reg>ho</reg></choice>">
+<!ENTITY of-ô "<choice><orig>of</orig><reg>ô</reg></choice>">
+<!ENTITY oe-œ "<choice><orig>oe</orig><reg>œ</reg></choice>">
+<!ENTITY P-p "<choice><orig>P</orig><reg>p</reg></choice>">
+<!ENTITY R-r "<choice><orig>R</orig><reg>r</reg></choice>">
+<!ENTITY S "<choice><orig>S</orig><reg></reg></choice>">
+<!ENTITY s "<choice><orig>s</orig><reg></reg></choice>">
+<!ENTITY S-s "<choice><orig>S</orig><reg>s</reg></choice>">
+<!ENTITY f-s "<choice><orig>ſ</orig><reg>s</reg></choice>">
+<!ENTITY ff-ss "<choice><orig>ſſ</orig><reg>ss</reg></choice>">
+<!ENTITY uf-û "<choice><orig>uſ</orig><reg>û</reg></choice>">
+<!ENTITY euf-û "<choice><orig>euſ</orig><reg>û</reg></choice>">
+<!ENTITY û-u "<choice><orig>û</orig><reg>u</reg></choice>" >
+<!ENTITY ü-u "<choice><orig>ü</orig><reg>u</reg></choice>">
+<!ENTITY oi-ai "<choice><orig>oi</orig><reg>ai</reg></choice>">
+<!ENTITY s-ts "<choice><orig>s</orig><reg>ts</reg></choice>">
+
+<!--La ponctuation-->
+<!ENTITY space "<choice><orig></orig><reg> </reg></choice>">
+<!ENTITY esperluette-et "<choice><orig>&amp;</orig><reg>, et</reg></choice>">
+<!ENTITY point "<choice><orig></orig><reg>.</reg></choice>">
+<!ENTITY virgule "<choice><orig>,</orig><reg></reg></choice>">
+<!ENTITY deuxPoints-point "<choice><orig>:</orig><reg>.</reg></choice>">
+<!ENTITY deuxPoints-virgule "<choice><orig>:</orig><reg>,</reg></choice>">
+<!ENTITY deuxPoints-pointVirgule "<choice><orig>:</orig><reg>;</reg></choice>">
+<!ENTITY pointVirgule-virgule "<choice><orig>;</orig><reg>,</reg></choice>">   
+<!ENTITY pointVirgule-point "<choice><orig>;</orig><reg>.</reg></choice>">   
+<!ENTITY pointVirgule-deuxPoints "<choice><orig>;</orig><reg>:</reg></choice>">
+
+<!-- POUR ALLER PLUS LOIN DANS L'ENCODAGE (davantage diplomatique que critique) SUIVRE LES ELEMENTS ET ATTRIBUTS CI-DESSOUS: 
+
+ELEMENTS : Définit les éléments qui peuvent être utilisés, leur nombre, leur imbrication, leur ordre, etc
+<!ELEMENT fable (livre, numero, illustration, titre, strophe+)>
+<!ELEMENT livre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT illustration (zone*) >
+<!ELEMENT strophe ((vers*)|(tercet | quaintil | sizain | septain | douzain))>
+<!ELEMENT strophe (vers+)>
+<!ELEMENT vers (#PCDATA)>
+
+ATTRIBUTS : Définit les attributs autorisés pour un élément précis, leur valeurs et le type de valeur autorisé
+<!ATTLIST fable type CDATA #FIXED "Fable">
+<!ATTLIST fable n CDATA #REQUIRED>
+<!ATTLIST strophe type ((vers*)|(tercet | quaintil | sizain | septain | douzain)) #REQUIRED #PCDATA>
+<!ATTLIST zone type (illustration) #REQUIRED
+               rend CDATA #IMPLIED> -->

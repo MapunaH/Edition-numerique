@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "DTD-fables.dtd">
+<?xml-model href="out/ODD_TEI-fables.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="out/ODD_TEI-fables.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+
+   <!-- HEADER DU TEXTE -->
+   <teiHeader>
+
+      <!-- Description bibliographique du fichier numérique ainsi que de sa source (physique ou non) -->
+      <fileDesc>
+
+
+         <!-- Titre et responsabilités liées au document encodé -->
+         <titleStmt>
+
+            <title>Moderniser les Fables de La Fontaine </title>
+
+            <author>
+               <orgName>École nationale des chartes</orgName>
+               <forename>Marina</forename>
+               <persName> Hervieu</persName>
+            </author>
+
+            <respStmt>
+               <resp xml:id="encoder">Responsable à l'origine de l'encodage</resp>
+               <persName>
+                  <forename>Marina</forename>
+                  <persName>Hervieu</persName>
+               </persName>
+            </respStmt>
+            <respStmt>
+               <resp xml:id="corrector">Responsable de la correction de l'encodage</resp>
+               <persName>
+                  <forename>Ségolène</forename>
+                  <persName>Albouy</persName>
+               </persName>
+            </respStmt>
+
+         </titleStmt>
+
+         <!-- Si cette publication est destinée à être publiée par les éditions de l'École. -->
+         <editionStmt>
+            <edition>
+               <name>Éditions de l'École nationale des chartes,</name>
+               <settlement type="city">Paris</settlement>
+               <country xml:id="FR">France</country>
+            </edition>
+         </editionStmt>
+
+         <!-- Informations sur la publication/distribution du document numérique (l'encodage) -->
+         <publicationStmt>
+
+            <publisher>Master 2 - ARCHIVES Technologies numériques appliquées à l'histoire à l'École
+               nationale des chartes.</publisher>
+            <pubPlace>
+               <address>
+                  <district type="arrondissement">2e</district>
+                  <street><num>65,</num> rue Richelieu</street>
+                  <postCode>75002</postCode>
+                  <settlement type="city">Paris</settlement>
+                  <country key="FR">France</country>
+               </address>
+            </pubPlace>
+            <date when-iso="2024-02-29" type="date">23 février 2023</date>
+
+         </publicationStmt>
+
+         <!-- Informations concernant la source dont est issue l'encodage -->
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main">Fables choisies, mises en vers par M. de La Fontaine</title>
+                  <title type="subtitle">Livre Premier</title>
+                  <author>
+                     <forename>Jean</forename>
+                     <surname>de La Fontaine (1621-1695)</surname>
+                  </author>
+                  <editor resp="contributor">Fables illustrées par François Chauveau, Graveur (1613-1676)</editor>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Fables éditées par Claude Barbin, avec privilège du Roi Louis XIV</publisher>
+                  <pubPlace>
+                     <address>
+                        <street>Palais sur le Perron de la sainte Chapelle.</street>
+                        <settlement type="city">Paris,</settlement>
+                        <country key="FR">France,</country>
+                     </address>
+                  </pubPlace>
+                  <date when-iso="1668">1668</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/btv1b8610825d/f103.item">
+                     Gallica, Bibliothèque nationale de France</distributor>
+                  <availability>
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Domaine public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Fables choisies, mises en vers par M. de La Fontaine</title>
+                  <biblScope unit="book" n="1">Livre Premier</biblScope>
+                  <!-- emplacement de la source dans l'oeuvre papier -->
+                  <biblScope unit="part" from="20" to="22">Fables XX, XXI, XXII</biblScope>
+                  <biblScope unit="page" from="43" to="48">pp.43-48</biblScope>
+               </seriesStmt>
+               <notesStmt>
+                  <note>Texte original imprimé par l'éditeur qui était aussi imprimeur au XVIIe
+                     siècle.</note>
+               </notesStmt>
+            </biblFull>
+
+         </sourceDesc>
+
+
+      </fileDesc>
+
+      <!-- Informations concernant l'encodage du texte: relation entre texte encodé et sa source (à préciser dans l'ODD)-->
+      <encodingDesc>
+
+
+         <projectDesc>
+            <p>Edition encodée et enrichie dans le cadre de l'évaluation de l'UE Edition scientifique, XML-TEI pour le 
+               master 2 "Technologies numériques appliquées à l'histoire" de l'École nationale des chartes.</p>
+            <p>L'encodage des Fables de la Fontaine selon un projet d'édition critique montre
+               l'évolution de la langue française, notamment de l'ancien français du XVIIe siècle au
+               français moderne du XXIe siècle. </p>
+            <p> Les Fables choisies, mises en vers par M. de La Fontaine, appelées simplement Fables
+               de La Fontaine, sont trois recueils regroupant deux cent quarante-trois fables
+               allégoriques publiés par Jean de La Fontaine entre 1668 et 1694 poour la première
+               édition publiée par Ed. Barbin &amp; Thierry. Après la mort de l'auteur, les Fables
+               sont réeditées à de nombreuses reprises parmi les plus connus sont la deuxième
+               édition publiée en 1863 par Ed. Ch. Marty-Laveaux, se suivent deux nouvelles versions
+               par Ed. Bernadin-Bechet en 1874 puis Ed. Mane en 1897. Jusqu'au XXIe siècle, les
+               Fables font l'objet de nombreuses adaptations sur différents supports. </p>
+         </projectDesc>
+
+
+         <editorialDecl>
+
+            <p>Le projet d’édition de cet encodage critique est la modernisation orthographique des
+               Fables de la Fontaine. L’édition a été réalisée par comparaison entre le texte
+               d'origine et une source déjà modernisée. Les similitudes n'ont pas été signalés,
+               seules les variances d'ordre orthographique et de ponctuation entre les versions sont
+               encodées. Voici les spécificités de l’encodage: </p>
+
+            <p>Il ne s’agit pas d’une étude sur la versification menée par La Fontaine. Bien
+               qu'intéressante, l’hétérométrie (utiliser des vers de différents mètres dans un même
+               poème) ne peut pas être étudiée à l’échelle de trois extraits dont la versification
+               varie beaucoup trop de l'un à l'autre. L'hétérométrie en devient donc contraignante.
+               En revanche, elle serait un sujet pertinent pour développer l’encodage à l'échelle de
+               toutes les Fables afin d’y analyser les règles de la métrique classique mélangées aux
+               mètres et rimes appliquées par de La Fontaine. La structuration du texte en
+               paragraphes, strophes, vers ou rimes et sauts de pages de la version originale a donc
+               été mise de côté dans le cadre de cet encodage. Pour celui-ci, on considère que les
+               différences orthographiques sont plus importantes que les différences de structure
+               des fables. Les spécificités des graphiesalors modernisées sont indiquées via les
+               entités qui permettent aux lecteurs, sur la même ligne, de lire en même temps les
+               différentes orthographiques appliquées aux mots et celles appliquées à la
+               ponctuation. Une telle lecture facilite l'observation de l'évolution de la langue
+               française.</p>
+
+            <correction status="medium" method="silent">
+               <p>A la relecture de l'encodage, les erreurs de transcriptions ont été détectées et
+                  corrigées manuellement. En voici quelques exemples: <list>
+                     <item>Fable XXII. l. 4: <corr>vent</corr><orig>vend</orig></item>
+                     <item>Fable XXII. l. 15:<corr>mais</corr><orig>mai</orig></item>
+                  </list></p>
+            </correction>
+
+            <quotation>
+               <p>Les éléments de la nature, faune ou flore, que l'auteur personnifie dialoguent à
+                  de nombreuses reprises. Pour les dialogues, la version originale n'indique pas de
+                  guillements pour les citations, elles sont seulement tabulées. La version
+                  modernisée ne respecte pas cet orthographe. </p>
+            </quotation>
+
+            <normalization method="silent">
+               <p>De part la personnification des éléments de la nature, où le roseau devient le
+                  personnage éponyme d'une fable, la version originale les indique avec une
+                  majuscule. La version modernisée les normalise en les ramenant à l'usage de la
+                  minuscle.</p>
+            </normalization>
+
+            <hyphenation eol="all">
+               <p>Les césures sont supprimées car l'édition diplomatique n'est pas l'objectif de cet
+                  encodage.</p>
+            </hyphenation>
+         </editorialDecl>
+      </encodingDesc>
+
+      <!-- Aspects non bibliographiques du texte numérique : langues, contexte de production, participants... -->
+      <profileDesc>
+
+
+         <creation>
+            <!-- informations sur la création du texte originel -->
+            <title>Fables</title>
+            <origDate from="1599" to="1700">XVIIe siècle</origDate>
+            <country key="FR">France</country>
+            <lang xml:id="fro">Ancien français</lang>
+         </creation>
+      </profileDesc>
+
+
+      <!-- Historique des modifications -->
+      <revisionDesc>
+
+
+         <!-- Répéter l'élément autant que nécessaire -->
+         <change when="2023-11-25" who="#encoder">Création du fichier d'encodage</change>
+         <change when="2023-12-02">Encodage de la structure du fichier</change>
+         <change when="2023-12-09">Début de l'encodage des fables</change>
+         <change when="2023-12-16">Suite de l'encodage des fables</change>
+         <change when="2024-01-02">Suite de l'encodage des fables</change>
+         <change when="2024-01-03">Encodage du teiHeader</change>
+         <change when="2024-01-04">Encodage de la DTD</change>
+         <change when="2024-01-13">Relecture des élements, attributs, entités (DTD)</change>
+         <change when="2024-02-17">Fin de l'encodage des fables et du teiHeader</change>
+         <change when="2024-02-20">Relecture et corrections mineures</change>
+         <change when="2024-02-22">Commenter l'encodage</change>
+
+
+      </revisionDesc>
+
+   </teiHeader>
+
+   <!-- Début de l'encodage -->
+   <text>
+      <body>
+         <div type="book" n="1">
+            <head>Les Fables de la Fontaine, Livre I</head>
+
+            <div type="part" n="20">
+               <head>FABLE XX</head>
+
+               <head type="number">FABLE VINGTIE&S;ME.</head>
+
+               <head type="title">Le Coq &amp; la Perle.</head>
+
+               <l n="1"><hi rend="color(orange) case(caps)">U</hi>n jour un <rs nymRef="#COQ">&C-c;oq</rs> <rs nymRef="#PROFIT">détourna</rs></l>
+               <l n="2">Une <rs nymRef="#PERLE">&P-p;erle</rs> qu’il donna</l>
+               <l n="3">Au beau <rs nymRef="#EMPHASE">premier</rs> &L-l;apidaire &deuxPoints-point;</l>
+               <l n="4">Je la crois fine, dit-il &pointVirgule-virgule;</l>
+               <l n="5">Mais le moindre grain de &M-m;il</l>
+               <l n="6">Ser&oi-ai;t bien mieux mon affaire.</l>
+               <l n="7">Un ignorant h&e-é;rita</l>
+               <l n="8">D’un &M-m;anu&f-s;crit qu’il porta</l>
+               <l n="9">Chez &f-s;on voi&f-s;in le &L-l;ibraire &pointVirgule-point; </l>
+               <l n="10">Je crois, dit-il, qu’il e&f-s;t bon ;</l>
+               <l n="11">Mais le moindre <rs nymRef="#DUCATON">&D-d;ucaton</rs></l>
+               <l n="12">Ser&oi-ai;t bien mieux mon affaire.</l>
+            </div>
+
+            <div type="part" n="21">
+               <head>FABLE XXI</head>
+
+               <head type="number">FABLE VINGT-UNIE&S;ME</head>
+
+               <head type="title">Les <rs nymRef="#FRELONS">Frelons</rs>, &amp; les <rs nymRef="#MOUCHES">Mo&û-u;ches</rs> à miel.</head>
+
+               <l n="1"><hi rend="color(orange) case(caps)">A</hi>l'&oe-œ;uvre on conn&oi-ai;&f;t l’&A-a;rti&f-s;an.</l>
+               <l n="2">Quelques rayons de miel &f-s;ans ma&if-î;tre &f-s;e trouv&e-è;rent &deuxPoints-virgule; </l>
+               <l n="3">Des <rs nymRef="#FRELONS">&F-f;relons</rs> les r&e-é;clam&e-è;rent, </l>
+               <l n="4">Des <rs nymRef="#ABEILLE">&A-a;beilles</rs> <rs nymRef="#OPPOSITION">s’oppo&f-s;ant</rs>,</l>
+               <l n="5">Devant certaine <rs nymRef="#GUEPE">&G-g;u&ef-ê;pe</rs> on tradui&f-s;it la cau&f-s;e. </l>
+               <l n="6">Il &ef-é;t&oi-ai;t mal-ai&f-s;é de décider la cho&f-s;e : </l>
+               <l n="7">Les témoins dépo&f-s;&oi-ai;ent qu’autour de ces rayons </l>
+               <l n="8">Des animaux aîl&ez-és;, bourdonnan<choice><orig/><reg>t</reg></choice>s, un peu longs,</l>
+               <l n="9">De couleur fort <rs nymRef="#TAN">tannée </rs>; &amp; tels que les <rs nymRef="#ABEILLE">&A-a;beilles</rs>, </l>
+               <l n="10">Av&oi-ai;ent long<choice><orig>-</orig><reg/></choice>temps paru:&space;Mais quo&y-i;, dans les <rs nymRef="#FRELONS">&F-f;relons</rs> </l>
+               <l n="11">Ces <rs nymRef="#SIGNES">en&f-s;eignes</rs> e&f-s;t&oi-ai;ent pareilles. </l>
+               <l n="12">La <rs nymRef="#GUEPE">Gu&ef-ê;pe</rs> ne &fç-s;achant que dire à ces rai&f-s;ons, </l>
+               <l n="13">Fit enqu&ef-ê;te nouvelle ; &amp; pour plus de lumière, </l>
+               <l n="14">Entendit une fourmilli&e-è;re&pointVirgule-point;</l>
+               <l n="15">Le poi&n-gn;et n’en pût &ef-ê;tre éclairc&y-i;. </l>
+               <l n="16">De gr&a-â;ce, &A-a; quo&y-i; bon tout cec&y-i; ? </l>
+               <l n="17">Dit une <rs nymRef="#ABEILLE">&A-a;beille</rs> fort prudente&deuxPoints-virgule; </l>
+               <l n="18">Depuis tant&of-ô;t &f-s;ix mois que la &C-c;au&f-s;e e&f-s;t <rs nymRef="#SUSPENS">pendante</rs>,</l>
+               <l n="19">Nous voic&y-i; comme aux premiers jours ; </l>
+               <l n="20">Pendant cela le miel &f-s;e g&af-â;te. </l>
+               <l n="21">Il e&f-s;t temps d&e-é;&f-s;ormais que le &J-j;uge &f-s;e h&af-â;te : </l>
+               <l n="22">N’a-t-il point a&ff-ss;ez léché l’<rs nymRef="#RABELAIS">&O-o;urs</rs> ?</l>
+               <l n="23">Sans tant de contredits, &amp; d’interlocutoires, </l>
+               <l n="24">Et de fatras, &amp; de grimoires, </l>
+               <l n="25">Travaillons, les <rs nymRef="#FRELONS">&F-f;relons</rs> &amp; nous : </l>
+               <l n="26">On verra qui &fç-s;ait faire un &f-s;uc &f-s;i doux&virgule;</l>
+               <l n="27">Des cellules &f-s;i bien b&af-â;ties. </l>
+               <l n="28">Le refus des <rs nymRef="#FRELONS">&F-f;relons</rs> fit voir </l>
+               <l n="29">Que cet art pa&ff-ss;&oi-ai;t leur &fç-s;avoir : </l>
+               <l n="30">Et la <rs nymRef="#GUEPE">Gu&ef-ê;pe</rs> adjugea le miel à leurs parties</l>
+               <l n="31">Pl&euf-û;t-à-Dieu qu’on r&e-é;gl&aft-a; aini&f-s; tous les proc&ez-és; !</l>
+               <l n="32">Que des <rs nymRef="#TURCS">Turcs</rs> en cela l’on &f-s;uiv&if-î;t la m&e-é;thode ! </l>
+               <l n="33">Le &f-s;imple &f-s;ens commun nous tiendr&oi-ai;t lieu de Code, </l>
+               <l n="34">Il ne faudr&oi-ai;t point tant de frais &deuxPoints-pointVirgule;</l>
+               <l n="35">Au lieu qu’on nous mange, on nous gruge, </l>
+               <l n="36">On nous mine par des longueurs : </l>
+               <l n="37">On fait tant à la fin que l’<rs nymRef="#REFERENCE"><rs nymRef="#HUITRE">hu&if-î;tre</rs></rs> e&f-s;t pour le &J-j;uge, </l>
+               <l n="38">Les écailles pour les plaideurs.</l>
+            </div>
+
+            <div type="part" n="22">
+               <head>FABLE XXII</head>
+
+               <head type="number">FABLE VINGT-DEUXIE&S;ME.</head>
+
+               <head type="title">Le <rs nymRef="#CHENE">Ch&ef-ê;ne</rs> &amp; le <rs nymRef="#ROSEAU">Ro&f-s;eau</rs>.</head>
+
+               <l n="1"><hi rend="color(orange) case(caps)">L</hi>L <rs nymRef="#CHENE">Ch&ef-ê;ne</rs> un jour dit au <rs nymRef="#ROSEAU">Ro&f-s;eau</rs> :</l>
+               <l n="2">Vous avez bien <rs nymRef="#SUJET">&f-s;ujet</rs> d’accu&f-s;er la &N-n;ature &deuxPoints-pointVirgule;</l>
+               <l n="3">Un <rs nymRef="#ROITELET">&R-r;oitelet</rs> pour vous e&f-s;t un pe&f-s;ant fardeau.</l>
+               <l n="4">Le moindre vent qui d’<rs nymRef="#HASARD">aventure</rs></l>
+               <l n="5">Fait rider la face de l’eau&virgule;</l>
+               <l n="6">Vous oblige à bai&ff-ss;er la t&ef-ê;te :</l>
+               <l n="7">Cependant que mon front au Cauca&f-s;e pareil,</l>
+               <l n="8">Non content d’arr&ef-ê;ter les rayons du &S-s;oleil,</l>
+               <l n="9">Brave l’effort de la temp&ef-ê;te.</l>
+               <l n="10">Tout vous e&f-s;t <rs nymRef="#AQUILON">Aquilon</rs> ; tout me semble <rs nymRef="#ZEPHYR">Z&e-é;ph<choice><orig>i</orig><reg>y</reg></choice>r</rs>.</l>
+               <l n="11">Encor&e; &f-s;i vous nai&ff-ss;iez à l’abr&y-i; du fe&ü-u;illage</l>
+               <l n="12">Dont je couvre le voi&f-s;inage&pointVirgule-virgule;</l>
+               <l n="13">Vous n’auriez pas tant à &f-s;ouſfrir &pointVirgule-deuxPoints;</l>
+               <l n="14">Je vous d&e-é;&ff-ss;dr&oi-ai;s de l’orage &deuxPoints-pointVirgule;</l>
+               <l n="15">Mais vous nai&ff-ss;ez le plus &f-s;ouvent</l>
+               <l n="16">Sur les humides bords des &R-r;oyaumes du vent.</l>
+               <l n="17">La Nature envers vous me &f-s;emble bien inju&f-s;te.</l>
+               <l n="18">Vo&f;tre compa&ff-ss;ion , lu&y-i; répondit l’<rs nymRef="#ARBUSTE">&A-a;rbu&f-s;te</rs>, </l>
+               <l n="19">Part d’un bon naturel ; mais vous quittez ce &f-s;ouc&y-i;&pointVirgule-point;</l>
+               <l n="20">Les vents me &f-s;ont moins qu’à vous redoutables&point;</l>
+               <l n="21">Je plie &esperluette-et;ne romps pas&pointVirgule-point; Vous avez ju&f-s;qu’ic&y-i;</l>
+               <l n="22">Contre leurs coups épouvantables </l>
+               <l n="23">Re&f-s;i&f-s;té &f-s;ans courber le dos &deuxPoints-pointVirgule;</l>
+               <l n="24">Mais attendons la fin. Comme il di&f-s;&oi-ai;t ces mots &pointVirgule-virgule;</l>
+               <l n="25">Du bout de l’&O-ho;rizon accourt avec furie</l>
+               <l n="26">Le plus terrible des enfan&s-ts;</l>
+               <l n="27">Que le Nor&t-d; e&uf-û;t porté ju&f-s;que&s;-là dans &f-s;es flancs.</l>
+               <l n="28">L’<rs nymRef="#ARBRE">&A-a;rbre</rs> tient bon ; le <rs nymRef="#ROSEAU">Ro&f-s;eau</rs> plie&deuxPoints-point;</l>
+               <l n="29">Le vent redouble &f-s;es efforts,</l>
+               <l n="30">Et fait &f-s;i bien qu’il déracine</l>
+               <l n="31">Celu&y-i; de qui la t&ef-ê;te au Ciel &e-é;t &oi-ai;t <rs nymRef="#VOISINE">voi&f-s;ine</rs>,</l>
+               <l n="32">Et dont les pieds touch&oi-ai;ent à l’<rs nymRef="#VIRGILE">empire des morts</rs>.</l>
+            </div>
+         </div>
+      </body>
+   </text>
+   
+   <!-- INDEX pour expliciter le contenu de la fable -->
+   <standOff>
+      <!-- Liste des éléments de la nature personnifiée --> 
+      <listNym type="NATURE">
+         <nym xml:id="COQ">
+            <orth xml:lang="fr">coq</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/coq/19167">Oiseau domestique, 
+               mâle de la poule.Les coqs sont voisins des faisans, dont ils ne diffèrent que par le plus 
+               grand développement des caroncules [crête et barbillons] et de la queue. Le coq bankiva est la 
+               souche des races domestiques.</def>
+            <lbl>Homme ardent en amour.</lbl>
+         </nym>
+         <nym xml:id="PERLE">
+            <orth xml:lang="fr">perle</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/perle/59654">Concrétion nacrée, le plus souvent sphérique, qui se forme entre la coquille et
+               le manteau de certains mollusques.</def>
+            <lbl>Ce qu'il y a de mieux en son genre.</lbl>
+         </nym>
+         <nym xml:id="FRELONS">
+            <orth xml:lang="fr">frelons</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/frelon/35170">Grosse guêpe d'Europe, rousse et jaune, au nid fait de bois mâché et enduit de salive, très nuisible 
+               aux fruits et dont la piqûre peut être dangereuse.</def>
+            <lbl source="http://www.la-fontaine-ch-thierry.net/frelonsm.htm"> Aussi utilisé pour dénommer les mâles des abeilles, qui ne travaillent nullement dans la ruche </lbl>
+         </nym>
+         <nym xml:id="MOUCHES">
+            <orth xml:lang="fro">moûches</orth>
+            <orth xml:lang="fr">mouches</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/mouche/52851"> Insecte diptère aux formes trapues, au vol bourdonnant et zigzaguant, aux antennes courtes, aux balanciers recouverts d'un cuilleron ; plus particulièrement
+               insecte des familles des muscidés ou des calliphoridés.</def>
+            <lbl source="https://www.larousse.fr/dictionnaires/francais/mouche/52851">Petit morceau de taffetas noir que les dames des xviie et xviiie s. se mettaient sur le visage.</lbl>
+         </nym>
+         <nym xml:id="ABEILLE">
+            <orth xml:lang="fr">abeille</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/abeille/87">Insecte hyménoptère social (apidé) dont certaines espèces sont l'objet d'un élevage (apiculture) pour la récolte du miel et de la cire élaborée par une
+               colonie hébergée dans une ruche.</def>
+         </nym>
+         <nym xml:id="GUEPE">
+            <orth xml:lang="fro">guefpe</orth>
+            <orth xml:lang="fr">guêpe</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/gu%C3%AApe/38501"> Insecte hyménoptère social à l'abdomen annelé de jaune et de noir, dont la femelle est pourvue d'un aiguillon venimeux.</def>
+         </nym>
+         
+         <nym xml:id="HUITRE">
+            <orth xml:lang="fro">huiftre</orth>
+            <orth xml:lang="fr">huître</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/hu%C3%AEtre/40600">Mollusque marin bivalve, comestible, fixé aux rochers marins par une valve de sa coquille, dont on fait l'élevage (ostréiculture) dans des parcs et dont les espèces (belon, portugaise, etc.) sont surtout consommées 
+               pendant les « mois en r » (de septembre à avril), hors période de reproduction.</def>
+            <lbl source="https://www.larousse.fr/dictionnaires/francais/hu%C3%AEtre/40600">Personne sotte et stupide.</lbl>
+         </nym>
+         
+         <nym xml:id="CHENE">
+            <orth xml:lang="fro">chefne</orth>
+            <orth xml:lang="fr">chêne</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/ch%C3%AAne/15095">Arbre capable d'une grande longévité, aux fruits (glands) enchâssés dans une cupule, et commun dans toute l'Europe de l'Ouest et en Amérique du Nord, tant dans les forêts naturelles que
+               dans celles où les sylviculteurs l'ont semé ou planté.</def>
+         </nym>
+         
+         <nym xml:id="ROSEAU">
+            <orth xml:lang="fro">rofeau</orth>
+            <orth xml:lang="fr">roseau</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/roseau/69884">Nom usuel commun à de nombreuses plantes monocotylédones rhizomateuses du bord des eaux calmes.</def>
+            <lbl source="https://www.larousse.fr/dictionnaires/francais/roseau/69884">Symbole de la faiblesse, de la fragilité de l'être-humain.</lbl>
+         </nym>
+         
+         <nym xml:id="ROITELET">
+            <def source="https://www.larousse.fr/dictionnaires/francais/roitelet/69732">Très petit passereau (régulidé ou muscicapidé selon les auteurs) chanteur (de 8 à 9 cm), au plumage gris-vert marqué de taches noires et d'un bandeau jaune-orangé sur la tête. (Le roitelet huppé est commun en France. Il gagne les régions
+               méditerranéennes en hiver. On appelle parfois à tort « roitelet » le troglodyte.)</def>
+         </nym>
+         
+         <nym xml:id="AQUILON">
+            <orth xml:lang="fr">aquilon</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/aquilon/4885">Vent du nord, fort et froid.</def>
+         </nym>
+         
+         <nym xml:id="ZEPHYR">
+            <orth xml:lang="fro">Zephir</orth>
+            <orth xml:lang="fr">zéphyr</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/z%C3%A9phyr/83094">Vent doux et agréable d'ouest.</def>
+         </nym>
+         
+         <nym xml:id="ARBUSTE">
+            <orth xml:lang="fro">arbufte</orth>
+            <orth xml:lang="fr">arbuste</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/arbuste/4978">Plante ligneuse vivace ne dépassant pas 10 m de hauteur et dont le tronc n'est pas ramifié dès la base. (Un arbuste jeune a le port d'un arbrisseau, puis il acquiert celui d'un arbre
+               par perte des branches les plus basses.) </def>
+         </nym>
+         
+         <nym xml:id="ARBRE">
+            <orth xml:lang="fr">arbre</orth>
+            <def source="https://www.larousse.fr/dictionnaires/francais/arbre/4974">Végétal vivace, ligneux, rameux, atteignant au moins 7 m de hauteur et ne portant de branches durables qu'à une certaine distance du sol.</def>
+         </nym>
+         
+      </listNym>
+      
+      <!-- Liste des sous-entendus, références  -->
+      <listNym type="dictionnary">
+         <nym xml:id="PROFIT">
+            <orth xml:lang="fr">détourna</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">Veut dire mit de côté, à son profit.</def>
+         </nym>
+         
+         <nym xml:id="EMPHASE">
+            <orth xml:lang="fr">premier</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">Cela renforce le sens de premier ; on dirait maintenant : au tout premier.</def>
+         </nym>
+         
+         <nym xml:id="DUCATON">
+            <orth xml:lang="fr">ducaton</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">Le ducat étant une monnaie frappée par des ducs, le demi-ducat ou ducat d'argent (le ducat était en or) représente
+               un demi-duc. La monnaie était fabriquée en particulier à Venise de 1284 à 1797 et aussi il existait des ducatons de Hollande.</def>
+         </nym>
+         
+         <nym xml:id="OPPOSITION">
+            <orth xml:lang="fr">s'opposant</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/frelonsm.htm">Faire opposition étant un terme juridique.</def>
+         </nym>
+         
+         <nym xml:id="TAN">
+            <orth xml:lang="fr">tannée</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/frelonsm.htm">Le tan est un produit brun rougeâtre issu de l'écorcedu chêne après broyage
+               et servant au tannage des peaux. Ici, de la couleur du tan.</def>
+         </nym>
+         
+         <nym xml:id="SIGNES">
+            <orth xml:lang="fr">enseignes</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/frelonsm.htm">Ces signes, ces marques distinctives.</def>
+         </nym>
+         
+         <nym xml:id="SUSPENS">
+            <orth xml:lang="fr">pendante</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">En suspens</def>
+         </nym>
+         
+         <nym xml:id="RABELAIS">
+            <orth xml:lang="fr">l'ours</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">C'est une allusion à un passage du Tiers livre" de Rabelais où l'on voit le juge Bridoye comparer la naissance et l'évolution des procès à celles des ours qui,
+               au départ, sont des boules informes, que leur mère transforme en animaux auxquels les membres et les formes apparaissent, à force de léchages.></def>
+         </nym>
+         
+         <nym xml:id="TURCS">
+            <orth xml:lang="fr">Turcs</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">Conotation xénophobe datant du XVIIe siècle où le peuple turc 
+               avait la réputation d'être expéditif.</def>
+         </nym>
+         
+         <nym xml:id="REFERENCE">
+            <orth xml:lang="fr">l'huître</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/coqperl.htm">Il pourrait s'agir d'une référence à la fable "l'huître et les plaideurs" mais elle ne paraîtra qu'ultérieurement au Livre I.</def>
+         </nym>
+         
+         <nym xml:id="SUJET">
+            <orth xml:lang="fr">sujet</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/chenroso.htm">Synonymes de motifs pour.</def>
+         </nym>
+         
+         <nym xml:id="HASARD">
+            <orth xml:lang="fr">aventure</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/chenroso.htm">Par hasard</def>
+         </nym>
+         
+         <nym xml:id="VOISINE">
+            <orth xml:lang="fr">voisine</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/chenroso.htm">A comprendre : celui dont la tête était voisine du ciel</def>
+         </nym>
+         
+         <nym xml:id="VIRGILE">
+            <orth xml:lang="fr">empire des morts</orth>
+            <def source="http://www.la-fontaine-ch-thierry.net/chenroso.htm">Plusieurs expressions sont tirées de Virgile dans cette fable.</def>
+         </nym>
+         
+      </listNym>
+   </standOff>
+</TEI>
